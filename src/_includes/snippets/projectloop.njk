@@ -1,0 +1,34 @@
+<div class="row d-flex justify-content-center">
+  <div class="col-12">
+    {%- for project in projects %}
+      <div class="py-5 border-bottom">
+        <a href="{{ project.url | url }}"><h2 class="display-4">{{ project.data.title}}</h2></a>
+        <p>
+          {% for tag in project.data.tags | filterTagList %}
+            {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+            <a href="{{ tagUrl | url }}" class="btn btn-outline-light btn-sm me-2">{{ tag }}</a>
+          {% endfor %}
+        </p>
+        <p>{{ project.data.summary }}</p>
+        <a href="{{ project.url | url }}" class="link-fancy">View Project</a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="row d-flex justify-content-center mt-3">
+  <div class="col-12">
+    <div class="row d-flex justify-content-between">
+      <div class="col">
+        {% if pagination.href.previous %}
+          <a href="{{pagination.href.previous}}" class="btn btn-outline-light">< Previous Page</a>
+        {% endif %}
+      </div>
+      <div class="col text-end">
+        {% if pagination.href.next %}
+          <a href="{{pagination.href.next}}" class="btn btn-outline-light">Next Page ></a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

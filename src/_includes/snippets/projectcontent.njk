@@ -1,0 +1,19 @@
+<article>
+  <header class="border-bottom pb-4 mb-4">
+    <h1 class="display-1">{{ title }}</h1>
+    <p>
+      {%- for tag in tags | filterTagList -%}
+        {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+        <a href="{{ tagUrl | url }}" class="btn btn-outline-light btn-sm me-2">{{ tag }}</a>
+      {%- endfor %}
+    </p>
+  </header>
+
+  <p class="lead">{{ summary }}</p>
+
+  {% if coverImage %}
+    <img src="{{ coverImage }}" alt="{{ title }}" class="img-fluid mb-4">
+  {% endif %}
+
+  {{ content | safe }}
+</article>
