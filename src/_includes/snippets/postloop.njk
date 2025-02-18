@@ -9,7 +9,7 @@
         <p>
         {% for tag in post.data.tags | filterTagList %}
           {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-          <a href="{{ tagUrl | url }}" class="btn btn-outline-dark btn-sm me-2">{{ tag }}</a>
+          <a href="{{ tagUrl | url }}" class="btn btn-outline-light btn-sm me-2">{{ tag }}</a>
         {% endfor %}
       </p>
         <p>{{ post.data.summary }}</p>
@@ -24,7 +24,7 @@
     <div class="row d-flex justify-content-between">
       <div class="col">
         {% if pagination.href.previous %}
-          <a href="{{pagination.href.previous}}" class="btn btn-outline-primary">< Previous Page</a> {% endif %} </div> <div class="col text-end"> {% if pagination.href.next %} <a href="{{pagination.href.next}}" class="btn btn-outline-primary">Next Page ></a>
+          <a href="{{pagination.href.previous}}" class="btn btn-outline-light">< Previous Page</a> {% endif %} </div> <div class="col text-end"> {% if pagination.href.next %} <a href="{{pagination.href.next}}" class="btn btn-outline-light">Next Page ></a>
         {% endif %}
       </div>
     </div>

@@ -1,4 +1,53 @@
-//This is an example of how you can change BS5 variables. Just add the changed variables here and they will overwrite the defaults.
-// We changed the default font and the default $blue color (which is set as $primary as well)
-$blue: #1717e5;
-$font-family-sans-serif:      "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// Enable dark mode
+$enable-dark-mode: true;
+
+// Custom color mode settings
+$color-mode-type: data-bs-theme;
+
+// Override default colors for monochrome theme
+$primary: #ffffff;
+$secondary: #909090;
+$success: #a0a0a0;
+$info: #808080;
+$warning: #707070;
+$danger: #606060;
+$light: #f0f0f0;
+$dark: #202020;
+
+// Font settings
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+// Dark theme customization
+$body-bg-dark: #121212;
+$body-color-dark: #ffffff;
+
+// Text emphasis colors (monochrome)
+$primary-text-emphasis-dark: #ffffff;
+$secondary-text-emphasis-dark: #e0e0e0;
+$success-text-emphasis-dark: #d0d0d0;
+$info-text-emphasis-dark: #c0c0c0;
+$warning-text-emphasis-dark: #b0b0b0;
+$danger-text-emphasis-dark: #a0a0a0;
+$light-text-emphasis-dark: #ffffff;
+$dark-text-emphasis-dark: #e0e0e0;
+
+// Border and link colors
+$border-color-dark: #2d2d2d;
+$link-color-dark: #ffffff;
+$link-hover-color-dark: #d0d0d0;
+
+// Custom theme colors
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+// Background colors
+$body-tertiary-bg-dark: #1a1a1a;
+$body-secondary-bg-dark: #151515;
