@@ -7,7 +7,11 @@ tags:
   - development
 ---
 
-This is a sample project that demonstrates the portfolio functionality. Replace this content with your actual project details.
+<div class="container">
+
+<p>This is a sample project that demonstrates the portfolio functionality. Replace this content with your actual project details.</p>
+
+</div>
 
 ## Overview
 
