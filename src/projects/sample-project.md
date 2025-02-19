@@ -1,7 +1,7 @@
 ---
 title: Sample Project
 summary: A brief overview of this amazing project that showcases the best of design and development.
-coverImage: /img/img1.jpg
+coverImage: /img/img3.jpg
 tags:
   - design
   - development
